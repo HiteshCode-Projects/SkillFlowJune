@@ -1,0 +1,12 @@
+div{
+    background-color: beige;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 12px;
+}
+
+img{
+    border: 1px solid blue;
+    border-radius: 12px;
+}
