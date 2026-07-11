@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //1. Arthemetic Operator + , - , / , * ,  %-Remainder
+
+        var x  = 10
+        var y = 5
+
+        console.log(x+y)
+        console.log(x-y)
+        console.log(x/y)
+        console.log(x*y)
+        console.log(x%y)
+
+
+
+        //2. Assigment - To Assign Value we use = equal to
+
+        var a = 10
+
+        console.log(a+=3)
+
+        //Comparison Op 
+
+        var p = 20
+        var q = 15
+
+        console.log(p<q)  //false
+        console.log(p>q)  // true
+
+        console.log( p<=q  )
+
+
+        var height1 = "170"
+        var height2 = 170
+      
+        // == : Checks The Value 
+        console.log(height1 == height2)   //True
+
+        // === : Checks Value and DATA TYPE ALSO
+        console.log(height1 === height2)  //False
+
+
+        //Logical Op 
+        //1. AND - &&: Both COndition is True Then Only Output is True
+
+        var isLogin = true
+        var NetflixSubscription = true
+
+        console.log("Can Watch Video "  ,   isLogin  && NetflixSubscription)
+
+
+
+        //2.OR - || : Only If One Condition is True Then Output is True
+
+         var ismember = true
+         var TotalBill = 500 
+
+         console.log("Discount =" , ismember  || TotalBill >= 500)
+
+
+        //3.Negation ! - Opp Value
+
+        var PaymentStatus = false
+
+        console.log("Status "  , !PaymentStatus)
+
+    </script>
+</body>
+</html>
