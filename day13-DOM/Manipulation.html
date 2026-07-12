@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Example -1 - Change Text Content of Html Tag -->
+
+    <!-- <p id="text">Hello Good Evening</p>
+
+    <button id="btn">Login/Follow</button>
+
+    <script>
+       
+       const ele = document.getElementById("text")
+       ele.textContent = "Welcome to Netflix"
+
+       const ele1 = document.getElementById("btn")
+       ele1.textContent = "Logout/Following"
+
+
+    </script> -->
+
+
+    <!-- Example 2 - Changing or Updating The Tag Itself -->
+
+    <!-- <div id="xyz">Hello this Div Container</div>
+
+    <script>
+        const ele2 = document.getElementById("xyz")
+
+        //Change or Update The tag use innerHTML
+
+         //One Tag
+         
+        // ele2.innerHTML = "<h1>This is Now Heading  </h1> "
+
+
+        //Mutiple Tag
+        ele2.innerHTML = `
+        <h2>Iphone</h2>
+        <img src="data:image/jpeg;base64,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" height="100" width="120">
+        <p>Rs (9990)</p>
+        <button>Buy Now
+        `
+
+
+
+    </script> -->
+
+
+
+   <!-- Example 3 - Css .style
+
+   <p id="myp">This is Old Dull Text</p>
+
+   <script>
+    const ele3 = document.getElementById("myp")
+
+    ele3.style.color = "red"
+    ele3.style.backgroundColor="black"
+    ele3.style.fontSize = "50px"
+    ele3.textContent = "New Paragaph Tag"
+
+   </script> -->
+
+
+
+   <!-- Example 4 - Create HTML Tag -->
+    <ul id="abc">
+        <li>Water </li>
+
+
+    </ul>
+
+    <script>
+        const ul = document.getElementById("abc")
+
+        const list = document.createElement("li")
+        list.textContent = "Gym"
+
+        ul.appendChild(list)
+
+
+    </script>
+</body>
+</html>

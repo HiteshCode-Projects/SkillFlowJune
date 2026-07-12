@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP">Hello Guys , Good Evening</p>
+
+    <div class="xyz">Web Development</div>
+    <div class="xyz">App Development</div>
+
+    <p>Welcome To Js</p>
+
+    <div class="box">Box - 0</div>
+    <div class="box">Box - 1</div>
+
+    <script>
+        //Selecting Method Through 
+        //document - webpage
+        //Element - Tag
+
+        var abc = document.getElementById("myP")
+        console.log(abc)
+        console.log(abc.textContent)
+
+
+        //class
+        const ele = document.getElementsByClassName("xyz")
+        console.log(ele)
+        console.log(ele[1].textContent)
+
+        //Array - Multiple Data at the same Time
+        // symbol - []
+        //Rule :Index No Starts with 0
+        var fruits = ["Apple" , "Mango" , "banana"]
+        console.log(fruits)
+        console.log(fruits[1]) 
+
+
+        //TagName
+        const pqr = document.getElementsByTagName("p")
+        console.log(pqr)
+        console.log(pqr[1])
+
+
+        //querySelector- It will Only Slect The First Tag. Follows The Rule of Css Property - #idName , .className
+
+        const xyz = document.querySelector(".box")
+        console.log(xyz)
+
+
+        //querySelectorAll - It will Select All The Tag
+        const mnb = document.querySelectorAll(".box")
+        console.log(mnb)
+
+
+
+    </script>
+</body>
+</html>
