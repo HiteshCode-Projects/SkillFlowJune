@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button id="btn">Greeting</button>
+
+    <button id="insta">Follow</button>
+
+
+    <input id="abc" type="text" placeholder="Search">
+
+    <script>
+        const button = document.getElementById("btn")
+
+        //Event Tag.addEventListner('Type of Events', function())
+
+        button.addEventListener('click' , function(){
+            alert('Good Eveing Welcome User')
+            console.log("Button Clicked")
+        })
+
+
+        //
+        const btninsta = document.getElementById("insta")
+         
+        btninsta.addEventListener('click', function(){
+            btninsta.textContent = "Following"
+        })
+
+
+        const input = document.getElementById("abc")
+
+        // change event
+
+        input.addEventListener('change' , function(e){
+              
+            console.log(e.target.value)
+
+            //Text tag
+          const body = document.getElementById("body")
+          const heading =   document.createElement("h2")
+
+          heading.textContent = e.target.value
+
+          body.appendChild(heading)
+          
+
+
+        })
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
